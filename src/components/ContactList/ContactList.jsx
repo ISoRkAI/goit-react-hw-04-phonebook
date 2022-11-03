@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import css from './ContactList.module.css';
 const ContactList = ({ filter, onDeleteContact }) => {
+  console.log(filter);
   return (
     <ul className={css.list}>
       {filter.map(({ id, name, number }) => (
